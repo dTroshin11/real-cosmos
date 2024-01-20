@@ -1,0 +1,85 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+.Apps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  @media (max-width: $media-tablet-landscape) {
+    flex-direction: column;
+  }
+}
+
+.Apps__info {
+  .Apps__texts {
+    margin-bottom: 48px;
+    .texts_title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 24px;
+      @media (max-width: $media-tablet-landscape) {
+       text-align: left;
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+
+    .texts_subtitle {
+      font-size: 18px;
+      @media (max-width: $media-tablet-landscape) {
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  .Apps__GoForm {
+    .Apps__button {
+      display: flex;
+      width: 100%;
+      max-width: 180px;
+      height: 40px;
+      padding: 8px 20px;
+      justify-content: center;
+      align-items: center;
+      gap:  4px;
+      border-radius: 4px;
+      background: #0072F8;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background-color .3s;
+      @media (max-width: $media-tablet-landscape) {
+       max-width: 340px;
+      }
+    }
+    .Apps__button:hover {
+      background-color: #268AFF;
+    }
+    .Apps__buttonInfo {
+      font-size: 14px;
+      line-height: 21px;
+      color: #818AA7;
+      @media (max-width: $media-tablet-landscape) {
+        text-align: left;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+.Apps__img {
+  background-image: url("../../assets/img/poItems.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //width: 100%;
+  //height: 100%;
+  //max-width: 418px;
+  //max-height: 330px;
+  width: 418px;
+  height: 330px;
+}
+
+
+
+

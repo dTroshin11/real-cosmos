@@ -1,0 +1,60 @@
+.ChartBlock {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../../assets/img/chartBg.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  .chart__info {
+    max-width: 485px;
+    .texts {
+      margin-bottom: 64px;
+      .info_title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 24px;
+      }
+      .info_subtitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 16px;
+      }
+      .info_text {
+        font-size: 18px;
+        line-height: 25px;
+        color: #818AA7;
+      }
+    }
+    .info_go {
+      .info_button {
+        width: 180px;
+        display: flex;
+        height: 40px;
+        padding: 8px 20px;
+        justify-content: center;
+        align-items: center;
+        gap:  4px;
+        border-radius: 4px;
+        background: #0072F8;
+        cursor: pointer;
+        margin-bottom: 16px;
+      }
+      .info_buttonText {
+        font-size: 14px;
+        color: #818AA7;
+      }
+    }
+  }
+  .Chart__img {
+    background-image: url("../../assets/img/Chart.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 434px;
+    height: 410px;
+  }
+}

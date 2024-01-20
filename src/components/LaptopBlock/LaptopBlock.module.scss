@@ -1,0 +1,86 @@
+.LaptopBlock {
+  margin-bottom: 150px;
+}
+.title {
+  align-items: center;
+  font-size: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.LaptopBlock__info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .item {
+    margin-bottom: 50px;
+    max-width: 400px;
+    .item__title {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+    .item__subtitle {
+      color: #818AA7;
+      line-height: 25px;
+    }
+  }
+  .item:last-child {
+    margin-bottom: 0px;
+  }
+  .info__center {
+    background-image: url("../../assets/img/SecondLaptop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 614px;
+    height: 615px;
+    //transform: rotate(-14.285deg);
+  }
+  .info__center:after {
+    content: " ";
+    animation:spin 60s linear infinite;
+    background-image: url("../../assets/img/animateLaptopLv3.svg");
+    position: absolute;
+    left: 100px;
+    top: -90px;
+    background-position: center;
+    background-size: cover;
+    width: 891px;
+    height: 891px;
+    z-index: -1;
+  }
+}
+.LaptopBlock__info:after {
+  content: " ";
+  animation:spin 60s linear infinite;
+  background-image: url("../../assets/img/animateLaptopLv1.svg");
+  position: absolute;
+  left: 220px;
+  top: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 626px;
+  height: 626px;
+  z-index: -1;
+}
+.LaptopBlock__info:before {
+  content: " ";
+  animation:spin 60s linear infinite;
+  background-image: url("../../assets/img/animateLaptopLv1.svg");
+  position: absolute;
+  left: 360px;
+  top: 160px;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  width: 346px;
+  height: 350px;
+}
+@keyframes spin{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}

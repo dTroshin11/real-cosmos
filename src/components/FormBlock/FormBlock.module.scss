@@ -1,0 +1,92 @@
+.FormBlock {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background-image: url("../../assets/img/formBg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  margin-bottom: 150px;
+  .img {
+    width: 500px;
+    height: 468px;
+    background-image: url("../../assets/img/FormLaptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 85px;
+  }
+  .info {
+    max-width: 450px;
+   .info__text {
+     .text__title {
+       font-size: 60px;
+       line-height: 60px;
+       margin-bottom: 24px;
+     }
+     .text__subtitle {
+       color: #818AA7;
+       font-size: 18px;
+       line-height: 25px;
+       margin-bottom: 36px;
+     }
+   }
+    .info__form {
+      display: flex;
+      flex-direction: column;
+      .form__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 16px;
+      }
+      .form__input {
+        padding: 16px 32px 16px 20px;
+        margin-bottom: 8px;
+        background: #12151F;
+        border-radius: 4px;
+        color: #818AA7;
+        border: none;
+      }
+      .form__checkbox {
+        display: flex;
+        margin-top: 8px;
+        margin-bottom: 24px;
+        .checkbox__checkbox {
+          //width: 16px;
+          //height: 16px;
+          //background-color: gray;
+          margin-right: 8px;
+        }
+        .checkbox__text {
+          font-size: 12px;
+          line-height: 18px;
+          a {
+            color: #80A7FF;
+            text-decoration: underline;
+          }
+        }
+
+      }
+      .form__button {
+        color: white;
+        font-size: 14px;
+        line-height: 20px;
+        height: 40px;
+        padding: 8px 20px;
+        justify-content: center;
+        align-items: center;
+        gap:  4px;
+        border-radius: 4px;
+        background: #0072F8;
+        cursor: pointer;
+        margin-bottom: 16px;
+        border: none;
+        transition: background-color .3s;
+      }
+      .form__button:hover {
+        background-color: #268AFF;
+      }
+    }
+  }
+}
