@@ -1,3 +1,7 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
+
 .FormBlock {
   display: flex;
   align-items: center;
@@ -8,6 +12,11 @@
   background-repeat: no-repeat;
   border-radius: 32px;
   margin-bottom: 150px;
+  @media (max-width: $media-tablet-landscape) {
+    padding: 24px;
+    flex-direction: column-reverse;
+    margin-bottom: 90px;
+  }
   .img {
     width: 500px;
     height: 468px;
@@ -16,6 +25,12 @@
     background-size: cover;
     background-position: center;
     margin-right: 85px;
+    @media (max-width: $media-tablet-landscape) {
+      margin-top: 48px;
+      width: 268px;
+      height: 250px;
+      margin-right: 0px;
+    }
   }
   .info {
     max-width: 450px;
@@ -24,17 +39,32 @@
        font-size: 60px;
        line-height: 60px;
        margin-bottom: 24px;
+       @media (max-width: $media-tablet-landscape) {
+         font-size: 28px;
+         line-height: 30px;
+         text-align: left;
+         margin-bottom: 16px;
+       }
      }
      .text__subtitle {
        color: #818AA7;
        font-size: 18px;
        line-height: 25px;
        margin-bottom: 36px;
+       @media (max-width: $media-tablet-landscape) {
+         font-size: 16px;
+         line-height: 22px;
+         text-align: left;
+         margin-bottom: 24px;
+       }
      }
    }
     .info__form {
       display: flex;
       flex-direction: column;
+      @media (max-width: $media-tablet-landscape) {
+        display: none;
+      }
       .form__title {
         font-size: 18px;
         line-height: 25px;
@@ -86,6 +116,42 @@
       }
       .form__button:hover {
         background-color: #268AFF;
+      }
+
+    }
+    .info__mobForm {
+      display: none;
+      @media (max-width: $media-tablet-landscape) {
+        display: block;
+        .form__title {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 16px;
+          text-align: left;
+          color: #818AA7;
+        }
+        .form__button {
+          color: white;
+          font-size: 14px;
+          max-width: 293px;
+
+          width: 100%;
+          line-height: 20px;
+          height: 40px;
+          padding: 8px 20px;
+          justify-content: center;
+          align-items: center;
+          gap:  4px;
+          border-radius: 4px;
+          background: #0072F8;
+          cursor: pointer;
+          margin-bottom: 16px;
+          border: none;
+          transition: background-color .3s;
+        }
+        .form__button:hover {
+          background-color: #268AFF;
+        }
       }
     }
   }

@@ -34,6 +34,12 @@ const FormBlock = ({formBlockRef}) => {
                             Оставить заявку
                         </button>
                     </form>
+                <form className={Styles.info__mobForm}>
+                    <div className={Styles.form__title}>Оставьте заявку и убедитесь лично:</div>
+                    <button className={Styles.form__button}>
+                        Оставить заявку
+                    </button>
+                </form>
                 {/*</div>*/}
             </div>
         </div>

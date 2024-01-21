@@ -1,20 +1,46 @@
+@import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
+
 .Calculator {
   margin-bottom: 150px;
+  @media (max-width: $media-tablet-landscape) {
+    margin-bottom: 90px;
+  }
   .title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
+    @media (max-width: $media-tablet-landscape) {
+      font-size: 28px;
+      line-height: 30px;
+      text-align: left;
+      margin-bottom: 36px;
+    }
   }
   .calculate {
     display: flex;
     margin-bottom: 60px;
-
+    @media (max-width: $media-tablet-landscape) {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
     .calculate__item {
       margin-right: 58px;
+      @media (max-width: $media-tablet-landscape) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
       .item__title {
         font-size: 20px;
         line-height: 26px;
         margin-bottom: 24px;
+        @media (max-width: $media-tablet-landscape) {
+          font-size: 16px;
+          line-height: 22px;
+          text-align: left;
+          margin-bottom: 8px;
+
+        }
       }
       .item__inputNum {
         padding: 8px;
@@ -35,6 +61,9 @@
     }
     .calculate__item:last-child {
       margin-right: 0px;
+      @media (max-width: $media-tablet-landscape) {
+        margin-bottom: 0px;
+      }
     }
   }
   .result {
@@ -43,17 +72,33 @@
       font-size: 28px;
       line-height: 28px;
       margin-bottom: 8px;
+      @media (max-width: $media-tablet-landscape) {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 4px;
+      }
     }
     .result__num {
       font-size: 60px;
       color: #0072F8;
       line-height: 60px;
       margin-bottom: 16px;
+      @media (max-width: $media-tablet-landscape) {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: left;
+      }
     }
     .result__subtitle {
       color: #818AA7;
       font-size: 14px;
       line-height: 21px;
+      @media (max-width: $media-tablet-landscape) {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: left;
+      }
     }
 
   }

@@ -3,56 +3,59 @@
 
 .Footer {
   width: 100%;
-  margin-bottom: 20px;
-
-  @media (min-width: $media-tablet) {
-    margin-bottom: 35px;
+  margin-bottom: 24px;
+  @media (max-width: $media-tablet) {
+    margin-bottom: 40px;
   }
 }
 
 .Wrapper {
   display: flex;
-  flex-direction: column;
-
+  //flex-direction: column;
+  flex-direction: row;
   width: 100%;
-
-  @media (min-width: $media-tablet-landscape) {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  @media (min-width: 1300px) {
-    flex-direction: row;
+  justify-content: space-between;
+  //align-items: center;
+  @media (max-width: $media-tablet-landscape) {
+    flex-direction: column;
   }
 }
 
 .LeftLink,
 .RightLink {
   display: flex;
-  flex-direction: column;
   text-align: left;
-
-  @media (min-width: $media-tablet) {
-    flex-direction: row;
+  flex-direction: row;
+  //align-items: flex-start;
+  @media (max-width: $media-tablet-landscape) {
+    flex-direction: column;
   }
-
   a,
   p {
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    opacity: 0.5;
-    margin-bottom: 20px;
-
+    //opacity: 0.5;
     @media (min-width: $media-tablet) {
       &:not(:last-child) {
         margin: 0 24px 0 0;
       }
     }
   }
+  p:first-child {
+    margin-bottom: 8px;
+  }
 
   a {
     text-decoration: underline;
+  }
+}
+.LeftLink {
+  @media (max-width: $media-tablet-landscape) {
+    flex-direction: column;
+  }
+  a {
+    margin-bottom: 37px;
   }
 }
 .footerText {

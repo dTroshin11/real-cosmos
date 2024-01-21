@@ -3,6 +3,9 @@
 
 .FeatureBlock {
   margin-bottom: 150px;
+  @media (max-width: $media-tablet-landscape) {
+    margin-bottom: 90px;
+  }
 }
 
 .title {
@@ -13,12 +16,20 @@
     text-align: left;
     font-size: 28px;
     line-height: 30px;
+    margin-bottom: 36px;
   }
 }
 
 .Features {
   display: flex;
   justify-content: center;
+
+  @media (max-width: $media-tablet-landscape) {
+    overflow-y: scroll;
+    justify-content: flex-start;
+    //width: 280px;
+  }
+
 }
 
 .Features__item {
@@ -30,7 +41,8 @@
   border-radius: 32px;
   width: 380px;
   @media (max-width: $media-tablet-landscape) {
-    width: 280px;
+    min-width: 280px;
+    width: 100%;
   }
   .icon {
     width: 36px;
@@ -40,6 +52,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (max-width: $media-tablet-landscape) {
+      margin-bottom: 24px;
+    }
   }
   .title {
     font-size: 20px;
@@ -60,3 +75,6 @@
 .Features__item:not(:last-child) {
   margin-right: 20px;
 }
+
+
+

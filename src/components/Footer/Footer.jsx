@@ -20,9 +20,11 @@ const BlockContent = () => {
             </a>
           </div>
           <div className={Styles.RightLink}>
-            <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener'>
-              Продукт разработан командой FutureCrew
-            </a>
+
+              <p>
+                Продукт разработан командой <a href={'https://futurecrew.ru/'} target={'_blank'} rel='noopener'>FutureCrew</a>
+              </p>
+
             <p>© 2024. Все права защищены</p>
           </div>
         </div>

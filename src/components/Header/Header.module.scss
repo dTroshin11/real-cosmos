@@ -1,4 +1,5 @@
 @import "@/assets/styles/variables.scss";
+@import "@/assets/styles/index.scss";
 
 .Header {
     width: 100%;
@@ -20,6 +21,10 @@
     width: 100%;
     height: fit-content;
     max-width: 1180px;
+    @media (max-width: $media-tablet-landscape) {
+        justify-content: flex-start;
+        margin-left: 17px;
+    }
 }
 
 .Logo {
@@ -28,6 +33,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @media (max-width: $media-tablet-landscape) {
+        width: 157px;
+    }
 }
 
 .LogoText {
@@ -56,6 +64,9 @@
     cursor: pointer;
     margin-bottom: 16px;
     color: white;
+    @media (max-width: $media-tablet-landscape) {
+        display: none;
+    }
 }
 .Btn:hover {
     background-color: #268AFF;

@@ -33,6 +33,10 @@ const ChartBlock = ({formBlockRef}) => {
                 </div>
             </div>
             <div className={Styles.Chart__img}></div>
+            <div className={Styles.info_goMob}>
+                <div className={Styles.info_button} onClick={scrollToFormBlock}>Оставить заявку</div>
+                <div className={Styles.info_buttonText}>*на основе данных из открытых источников</div>
+            </div>
         </div>
     );
 };
